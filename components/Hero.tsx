@@ -6,91 +6,223 @@ import GearUpSection from './GearUpSection'
 const Hero = () => {
   return (
     <>
-   <div className='bg-[#F5F5F5] w-full h-[58px] shadow-[0px_-1px_0px_0px_#E5E5E5_inset]'>
-  <h1 className='text-center text-black font-medium text-[17px] py-1'>Hello Nike App</h1>
-  <p className='text-center text-[12px]'>Download the app to access everything Nike. <span className='font-[600] underline'>Get Your Great</span></p>
-</div>
+      {/* Top Banner Section */}
+      <div className='bg-[#F5F5F5] w-full h-[58px] shadow-[0px_-1px_0px_0px_#E5E5E5_inset]'>
+        <h1 className='text-center text-black font-[600] text-[17px] py-1'>Hello Nike App</h1>
+        <p className='text-center text-[12px]'>
+          Download the app to access everything Nike. 
+          <span className='font-[600] underline'> Get Your Great</span>
+        </p>
+      </div>
 
-<div className="flex justify-center items-center">
-  <Image
-    src="/images/hero-image.png"
-    alt="hero"
-    width={1000}
-    height={1000}
-    className="w-full h-auto max-w-[1344px] object-cover"
-  />
-</div>
+      {/* Hero Image Section */}
+      <div className="flex justify-center items-center">
+        <Image
+          src="/images/hero-image.png"
+          alt="hero"
+          width={1000}
+          height={1000}
+          className="w-full h-auto max-w-[1344px] object-cover"
+        />
+      </div>
 
-<div className="mt-8 py-8 px-4 md:px-8">
+      {/* First Look Section */}
+      <div className="mt-8 py-8 px-4 md:px-8">
+        <h1 className="text-center text-black font-semibold text-[17px] pb-2">
+          First Look
+        </h1>
+        <h1 className="text-center text-black font-semibold text-[40px] md:text-[50px] leading-[50px] md:leading-[60px] pb-4">
+          NIKE AIR MAX PULSE
+        </h1>
+        <p className="text-center text-gray-700 text-sm md:text-base px-2 leading-6 md:leading-7">
+          Extreme comfort. Hyper durable. Max volume. Introducing the Air Max Pulse
+          <br className="hidden md:block" />
+          designed to push you past your limits and help you go to the max.
+        </p>
+        <div className="flex flex-col md:flex-row gap-4 items-center justify-center mt-6">
+          <button className="bg-black text-white text-sm font-medium py-3 px-6 md:py-4 md:px-8 rounded-full hover:bg-gray-800 transition duration-300">
+            Notify Me
+          </button>
+          <button className="bg-black text-white text-sm font-medium py-3 px-6 md:py-4 md:px-8 rounded-full hover:bg-gray-800 transition duration-300">
+            Shop Air Max
+          </button>
+        </div>
+      </div>
 
-  <h1 className="text-center text-black font-semibold text-[17px] pb-2">
-    First Look
-  </h1>
-  <h1 className="text-center text-black font-semibold text-[40px] md:text-[50px] leading-[50px] md:leading-[60px] pb-4">
-    NIKE AIR MAX PULSE
-  </h1>
+      {/* Shoe Section */}
+      <ShoeSection />
 
-  
-  <p className="text-center text-gray-700 text-sm md:text-base px-2 leading-6 md:leading-7">
-    Extreme comfort. Hyper durable. Max volume. Introducing the Air Max Pulse
-    <br className="hidden md:block" />
-    designed to push you past your limits and help you go to the max.
-  </p>
+      {/* Featured Section */}
+      <div>
+        <h2  className="text-center text-black font-semibold text-xl sm:text-2xl lg:text-3xl mb-8">
+          Featured
+        </h2>
+        <div className="flex justify-center items-center">
+          <Image
+            src="/images/runner.jpg"
+            alt="hero"
+            width={1000}
+            height={1000}
+            className="w-full h-auto max-w-[1344px] object-cover"
+          />
+        </div>
+        <div className="mt-8 py-8 px-4 md:px-8">
+          <h1 className="text-center text-black font-semibold text-[40px] md:text-[50px] leading-[50px] md:leading-[60px] pb-4">
+            STEP INTO WHAT FEELS GOOD
+          </h1>
+          <p className="text-center text-gray-700 text-sm md:text-base px-2 leading-6 md:leading-7">
+            Cause everyone should know the feeling of running in that perfect pair.
+          </p>
+          <div className="flex flex-col md:flex-row gap-4 items-center justify-center mt-6">
+            <button className="bg-black text-white text-sm font-medium py-3 px-6 md:py-4 md:px-8 rounded-full hover:bg-gray-800 transition duration-300">
+              Find Your Shoe
+            </button>
+          </div>
+        </div>
+      </div>
 
+      {/* Gear Up Section */}
+      <GearUpSection />
 
-  <div className="flex flex-col md:flex-row gap-4 items-center justify-center mt-6">
-    <button className="bg-black text-white text-sm font-medium py-3 px-6 md:py-4 md:px-8 rounded-full hover:bg-gray-800 transition duration-300">
-      Notify Me
-    </button>
-    <button className="bg-black text-white text-sm font-medium py-3 px-6 md:py-4 md:px-8 rounded-full hover:bg-gray-800 transition duration-300">
-      Shop Air Max
-    </button>
+      {/* Don't Miss Section */}
+      <div>
+        <h2  className="text-center text-black font-semibold text-xl sm:text-2xl lg:text-3xl mb-8">
+          Don't Miss
+        </h2>
+        <div className="flex justify-center items-center">
+          <Image
+            src="/images/missing.png"
+            alt="hero"
+            width={1000}
+            height={1000}
+            className="w-full h-auto max-w-[1344px] object-cover"
+          />
+        </div>
+        <div className="mt-8 py-8 px-4 md:px-8">
+          <h1 className="text-center text-black font-semibold text-[40px] md:text-[50px] leading-[50px] md:leading-[60px] pb-4">
+            FLIGHT ESSENTIALS
+          </h1>
+          <p className="text-center text-gray-700 text-sm md:text-base px-2 leading-6 md:leading-7">
+            Your built-to-last, all-week wears—but with style only Jordan Brand can deliver.
+          </p>
+          <div className="flex flex-col md:flex-row gap-4 items-center justify-center mt-6">
+            <button className="bg-black text-white text-sm font-medium py-3 px-6 md:py-4 md:px-8 rounded-full hover:bg-gray-800 transition duration-300">
+              Shop
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Essentials Section */}
+      <div className="mt-12">
+  <h2 className="text-center text-black font-semibold text-xl sm:text-2xl lg:text-3xl mb-8">
+    The Essentials
+  </h2>
+  <div className="flex justify-center">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10">
+      {/* Image 1 */}
+      <div className="relative w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] flex items-center justify-center">
+        <Image
+          src="/images/essential01.png"
+          alt="Picture 1"
+          width={500}
+          height={500}
+          className="w-full h-full object-cover"
+        />
+      
+        <button className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-[#F2D8D8] text-black py-2 px-4 rounded-full text-sm md:text-base hover:bg-gray-800 hover:text-white  transition duration-300">
+          Men
+        </button>
+      </div>
+
+      {/* Image 2 */}
+      <div className="relative w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] flex items-center justify-center">
+        <Image
+          src="/images/essential02.png"
+          alt="Picture 2"
+          width={500}
+          height={500}
+          className="w-full h-full object-cover"
+        />
+    
+        <button className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-[#F2D8D8] text-black py-2 px-4 rounded-full text-sm md:text-base hover:bg-gray-800 hover:text-white  transition duration-300">
+          Women
+        </button>
+      </div>
+
+      {/* Image 3 */}
+      <div className="relative w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] flex items-center justify-center">
+        <Image
+          src="/images/essential03.png"
+          alt="Picture 3"
+          width={500}
+          height={500}
+          className="w-full h-full object-cover"
+        />
+      
+        <button className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-[#F2D8D8] text-black py-2 px-4 rounded-full text-sm md:text-base hover:bg-gray-800 hover:text-white transition duration-300">
+          Kid
+        </button>
+      </div>
+    </div>
   </div>
 </div>
-<ShoeSection/>
 
-   <div>
-   <h1 className="text-left text-black font-[500] text-[20px] p-6 sm:p-8 md:p-10 lg:p-8 ml-4 sm:ml-8 md:ml-12 lg:ml-16">
-  Featured
-</h1>
+<div className="h-[70vh] sm:h-[60vh] flex items-center justify-center">
+  <div className="w-full max-w-7xl px-4">
+    <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
 
-   <div className="flex justify-center items-center">
-  <Image
-    src="/images/runner.jpg"
-    alt="hero"
-    width={1000}
-    height={1000}
-    className="w-full h-auto max-w-[1344px] object-cover"
-  />
-</div>
-<div className="mt-8 py-8 px-4 md:px-8">
+    <div>
+        <h3 className="font-semibold text-lg mb-4 text-center">Icons</h3>
+        <ul className="space-y-2 text-center">
+          <li>Air Force 1</li>
+          <li>Air Max 95</li>
+          <li>Air Max 90</li>
+          <li>Ai Max 80</li>
+        </ul>
+      </div>
+      {/* List 1 */}
+      <div>
+        <h3 className="font-semibold text-lg mb-4 text-center">Shoes</h3>
+        <ul className="space-y-2 text-center">
+          <li>All Shoes</li>
+          <li>Custom Shoes</li>
+          <li>Jordans Shoes</li>
+          <li>Running Shoes</li>
+        </ul>
+      </div>
 
-  <h1 className="text-center text-black font-semibold text-[40px] md:text-[50px] leading-[50px] md:leading-[60px] pb-4">
-  STEP INTO WHAT FEELS GOOD
-  </h1>
+      {/* List 2 */}
+      <div>
+        <h3 className="font-semibold text-lg mb-4 text-center">Clothing</h3>
+        <ul className="space-y-2 text-center">
+          <li>All Clothing</li>
+          <li>Modest Wear</li>
+          <li>Hoodies & Pullovers</li>
+          <li>Shirts & Tops</li>
+        </ul>
+      </div>
 
-  
-  <p className="text-center text-gray-700 text-sm md:text-base px-2 leading-6 md:leading-7">
-  Cause everyone should know the feeling of running in that perfect pair.
-  </p>
+      {/* List 3 */}
+      <div>
+        <h3 className="font-semibold text-lg mb-4 text-center">Kids</h3>
+        <ul className="space-y-2 text-center">
+          <li>Infant & Toddler Shoes</li>
+          <li>Kids Shoes</li>
+          <li>Kids Jordan Shoes</li>
+          <li>Kids' Basketball Shoes</li>
+        </ul>
+      </div>
 
-
-  <div className="flex flex-col md:flex-row gap-4 items-center justify-center mt-6">
-    <button className="bg-black text-white text-sm font-medium py-3 px-6 md:py-4 md:px-8 rounded-full hover:bg-gray-800 transition duration-300">
-      Find Your Shoe
-    </button>
-   
+    </div>
   </div>
 </div>
-   </div>
 
 
-<GearUpSection />
+
+
     </>
-
   )
 }
 
 export default Hero
-
-
