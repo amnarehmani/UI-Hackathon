@@ -103,7 +103,7 @@ const Hero = () => {
             FLIGHT ESSENTIALS
           </h1>
           <p className="text-center text-gray-700 text-sm md:text-base px-2 leading-6 md:leading-7">
-            Your built-to-last, all-week wears—but with style only Jordan Brand can deliver.
+            Your built to last, all week wears but with style only Jordan Brand can deliver.
           </p>
           <div className="flex flex-col md:flex-row gap-4 items-center justify-center mt-6">
             <button className="bg-black text-white text-sm font-medium py-3 px-6 md:py-4 md:px-8 rounded-full hover:bg-gray-800 transition duration-300">
@@ -193,8 +193,8 @@ const Hero = () => {
         <ul className="space-y-2 text-center">
           <li>All Clothing</li>
           <li>Modest Wear</li>
-          <li>Hoodies & Pullovers</li>
-          <li>Shirts & Tops</li>
+          <li>Hoodies and Pullovers</li>
+          <li>Shirts and Tops</li>
         </ul>
       </div>
 
@@ -202,7 +202,7 @@ const Hero = () => {
       <div>
         <h3 className="font-semibold text-lg mb-4 text-center">Kids</h3>
         <ul className="space-y-2 text-center">
-          <li>Infant & Toddler Shoes</li>
+          <li>Infant and Toddler Shoes</li>
           <li>Kids Shoes</li>
           <li>Kids Jordan Shoes</li>
           <li>Kids Basketball Shoes</li>
