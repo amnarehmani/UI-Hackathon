@@ -87,7 +87,7 @@ const Hero = () => {
       {/* Don&apos;t Miss Section */}
       <div>
         <h2 className="text-center text-black font-semibold text-xl sm:text-2xl lg:text-3xl mb-8">
-          Don&apos;t Miss
+          Dont Miss
         </h2>
         <div className="flex justify-center items-center">
           <Image
@@ -163,32 +163,56 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Footer Section */}
       <div className="h-[70vh] sm:h-[60vh] flex items-center justify-center">
-        <div className="w-full max-w-7xl px-4">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            <div>
-              <h3 className="font-semibold text-lg mb-4 text-center">Icons</h3>
-              <ul className="space-y-2 text-center">
-                <li>All Shoes</li>
-                <li>Air Max 95</li>
-                <li>Air Max 90</li>
-                <li>Air Max 88</li>
-              </ul>
-            </div>
+  <div className="w-full max-w-7xl px-4">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
 
-            <div>
-              <h3 className="font-semibold text-lg mb-4 text-center">Shoes</h3>
-              <ul className="space-y-2 text-center">
-                <li>All Shoes</li>
-                <li>Jordan</li>
-                <li>Running</li>
-                <li>Basketball</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+    <div>
+        <h3 className="font-semibold text-lg mb-4 text-center">Icons</h3>
+        <ul className="space-y-2 text-center">
+          <li>All Shoes</li>
+          <li>Air Max 95</li>
+          <li>Air Max 90</li>
+          <li>Air Max 88</li>
+        </ul>
       </div>
+      
+      <div>
+        <h3 className="font-semibold text-lg mb-4 text-center">Shoes</h3>
+        <ul className="space-y-2 text-center">
+          <li>All Shoes</li>
+          <li>Custom Shoes</li>
+          <li>Jordans Shoes</li>
+          <li>Running Shoes</li>
+        </ul>
+      </div>
+
+      
+      <div>
+        <h3 className="font-semibold text-lg mb-4 text-center">Clothing</h3>
+        <ul className="space-y-2 text-center">
+          <li>All Clothing</li>
+          <li>Modest Wear</li>
+          <li>Hoodies & Pullovers</li>
+          <li>Shirts & Tops</li>
+        </ul>
+      </div>
+
+      
+      <div>
+        <h3 className="font-semibold text-lg mb-4 text-center">Kids</h3>
+        <ul className="space-y-2 text-center">
+          <li>Infant & Toddler Shoes</li>
+          <li>Kids Shoes</li>
+          <li>Kids Jordan Shoes</li>
+          <li>Kids Basketball Shoes</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+
     </>
   )
 }
