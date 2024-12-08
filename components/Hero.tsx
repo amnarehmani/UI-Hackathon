@@ -167,7 +167,16 @@ const Hero = () => {
   <div className="w-full max-w-7xl px-4">
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
 
-      {/* List 1 */}
+    <div>
+        <h3 className="font-semibold text-lg mb-4 text-center">Icons</h3>
+        <ul className="space-y-2 text-center">
+          <li>All Shoes</li>
+          <li>Air Max 95</li>
+          <li>Air Max 90</li>
+          <li>Air Max 88</li>
+        </ul>
+      </div>
+      
       <div>
         <h3 className="font-semibold text-lg mb-4 text-center">Shoes</h3>
         <ul className="space-y-2 text-center">
@@ -178,7 +187,7 @@ const Hero = () => {
         </ul>
       </div>
 
-      {/* List 2 */}
+      
       <div>
         <h3 className="font-semibold text-lg mb-4 text-center">Clothing</h3>
         <ul className="space-y-2 text-center">
@@ -189,14 +198,14 @@ const Hero = () => {
         </ul>
       </div>
 
-      {/* List 3 */}
+      
       <div>
         <h3 className="font-semibold text-lg mb-4 text-center">Kids</h3>
         <ul className="space-y-2 text-center">
           <li>Infant & Toddler Shoes</li>
           <li>Kids Shoes</li>
           <li>Kids Jordan Shoes</li>
-          <li>Kids' Basketball Shoes</li>
+          <li>Kids Basketball Shoes</li>
         </ul>
       </div>
 
