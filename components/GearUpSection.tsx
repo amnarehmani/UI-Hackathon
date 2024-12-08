@@ -1,21 +1,9 @@
-"use client"
-import React, { useState } from 'react'
+
 import Image from 'next/image'
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 const GearUpSection = () => {
-  const [currentSlide, setCurrentSlide] = useState(0)
-
-  const handlePrev = () => {
-    console.log('Previous Slide')
-    setCurrentSlide((prev) => (prev - 1 < 0 ? 0 : prev - 1))
-  }
-
-  const handleNext = () => {
-    console.log('Next Slide')
-    setCurrentSlide((prev) => prev + 1)
-  }
-
+ 
   return (
 
     <>
@@ -32,13 +20,13 @@ const GearUpSection = () => {
           <div className="flex items-center space-x-2 sm:space-x-4 mb-4 sm:mb-0">
             <h2 className="text-lg sm:text-xl font-bold text-gray-900">Men</h2>
             <button
-              onClick={handlePrev}
+            
               className="p-2 bg-gray-200 rounded-full hover:bg-gray-300 transition"
             >
               <FiChevronLeft className="text-gray-700 text-lg" />
             </button>
             <button
-              onClick={handleNext}
+          
               className="p-2 bg-gray-200 rounded-full hover:bg-gray-300 transition"
             >
               <FiChevronRight className="text-gray-700 text-lg" />
@@ -49,13 +37,13 @@ const GearUpSection = () => {
           <div className="flex items-center space-x-2 sm:space-x-4">
             <h2 className="text-lg sm:text-xl font-bold text-gray-900">Women</h2>
             <button
-              onClick={handlePrev}
+      
               className="p-2 bg-gray-200 rounded-full hover:bg-gray-300 transition"
             >
               <FiChevronLeft className="text-gray-700 text-lg" />
             </button>
             <button
-              onClick={handleNext}
+          
               className="p-2 bg-gray-200 rounded-full hover:bg-gray-300 transition"
             >
               <FiChevronRight className="text-gray-700 text-lg" />

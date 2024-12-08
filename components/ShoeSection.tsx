@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from "react";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import Image from "next/image";
 
 const ShoeSection = () => {
   const shoes = [
@@ -91,7 +92,7 @@ const ShoeSection = () => {
             key={shoe.id}
             className="flex flex-col justify-center items-center p-4 rounded-md"
           >
-            <img
+            <Image
               src={shoe.image}
               alt={shoe.name}
               className="w-full h-auto object-contain mb-4"

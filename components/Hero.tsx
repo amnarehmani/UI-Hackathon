@@ -54,7 +54,7 @@ const Hero = () => {
 
       {/* Featured Section */}
       <div>
-        <h2  className="text-center text-black font-semibold text-xl sm:text-2xl lg:text-3xl mb-8">
+        <h2 className="text-center text-black font-semibold text-xl sm:text-2xl lg:text-3xl mb-8">
           Featured
         </h2>
         <div className="flex justify-center items-center">
@@ -84,10 +84,10 @@ const Hero = () => {
       {/* Gear Up Section */}
       <GearUpSection />
 
-      {/* Don't Miss Section */}
+      {/* Don&apos;t Miss Section */}
       <div>
-        <h2  className="text-center text-black font-semibold text-xl sm:text-2xl lg:text-3xl mb-8">
-          Don't Miss
+        <h2 className="text-center text-black font-semibold text-xl sm:text-2xl lg:text-3xl mb-8">
+          Don&apos;t Miss
         </h2>
         <div className="flex justify-center items-center">
           <Image
@@ -115,112 +115,53 @@ const Hero = () => {
 
       {/* Essentials Section */}
       <div className="mt-12">
-  <h2 className="text-center text-black font-semibold text-xl sm:text-2xl lg:text-3xl mb-8">
-    The Essentials
-  </h2>
-  <div className="flex justify-center">
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10">
-      {/* Image 1 */}
-      <div className="relative w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] flex items-center justify-center">
-        <Image
-          src="/images/essential01.png"
-          alt="Picture 1"
-          width={500}
-          height={500}
-          className="w-full h-full object-cover"
-        />
-      
-        <button className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-[#F2D8D8] text-black py-2 px-4 rounded-full text-sm md:text-base hover:bg-gray-800 hover:text-white  transition duration-300">
-          Men
-        </button>
+        <h2 className="text-center text-black font-semibold text-xl sm:text-2xl lg:text-3xl mb-8">
+          The Essentials
+        </h2>
+        <div className="flex justify-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10">
+            {/* Image 1 */}
+            <div className="relative w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] flex items-center justify-center">
+              <Image
+                src="/images/essential01.png"
+                alt="Picture 1"
+                width={500}
+                height={500}
+                className="w-full h-full object-cover"
+              />
+              <button className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-[#F2D8D8] text-black py-2 px-4 rounded-full text-sm md:text-base hover:bg-gray-800 hover:text-white transition duration-300">
+                Men
+              </button>
+            </div>
+            {/* Image 2 */}
+            <div className="relative w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] flex items-center justify-center">
+              <Image
+                src="/images/essential02.png"
+                alt="Picture 2"
+                width={500}
+                height={500}
+                className="w-full h-full object-cover"
+              />
+              <button className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-[#F2D8D8] text-black py-2 px-4 rounded-full text-sm md:text-base hover:bg-gray-800 hover:text-white transition duration-300">
+                Women
+              </button>
+            </div>
+            {/* Image 3 */}
+            <div className="relative w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] flex items-center justify-center">
+              <Image
+                src="/images/essential03.png"
+                alt="Picture 3"
+                width={500}
+                height={500}
+                className="w-full h-full object-cover"
+              />
+              <button className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-[#F2D8D8] text-black py-2 px-4 rounded-full text-sm md:text-base hover:bg-gray-800 hover:text-white transition duration-300">
+                Kid
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-
-      {/* Image 2 */}
-      <div className="relative w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] flex items-center justify-center">
-        <Image
-          src="/images/essential02.png"
-          alt="Picture 2"
-          width={500}
-          height={500}
-          className="w-full h-full object-cover"
-        />
-    
-        <button className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-[#F2D8D8] text-black py-2 px-4 rounded-full text-sm md:text-base hover:bg-gray-800 hover:text-white  transition duration-300">
-          Women
-        </button>
-      </div>
-
-      {/* Image 3 */}
-      <div className="relative w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] flex items-center justify-center">
-        <Image
-          src="/images/essential03.png"
-          alt="Picture 3"
-          width={500}
-          height={500}
-          className="w-full h-full object-cover"
-        />
-      
-        <button className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-[#F2D8D8] text-black py-2 px-4 rounded-full text-sm md:text-base hover:bg-gray-800 hover:text-white transition duration-300">
-          Kid
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div className="h-[70vh] sm:h-[60vh] flex items-center justify-center">
-  <div className="w-full max-w-7xl px-4">
-    <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-
-    <div>
-        <h3 className="font-semibold text-lg mb-4 text-center">Icons</h3>
-        <ul className="space-y-2 text-center">
-          <li>Air Force 1</li>
-          <li>Air Max 95</li>
-          <li>Air Max 90</li>
-          <li>Ai Max 80</li>
-        </ul>
-      </div>
-      {/* List 1 */}
-      <div>
-        <h3 className="font-semibold text-lg mb-4 text-center">Shoes</h3>
-        <ul className="space-y-2 text-center">
-          <li>All Shoes</li>
-          <li>Custom Shoes</li>
-          <li>Jordans Shoes</li>
-          <li>Running Shoes</li>
-        </ul>
-      </div>
-
-      {/* List 2 */}
-      <div>
-        <h3 className="font-semibold text-lg mb-4 text-center">Clothing</h3>
-        <ul className="space-y-2 text-center">
-          <li>All Clothing</li>
-          <li>Modest Wear</li>
-          <li>Hoodies & Pullovers</li>
-          <li>Shirts & Tops</li>
-        </ul>
-      </div>
-
-      {/* List 3 */}
-      <div>
-        <h3 className="font-semibold text-lg mb-4 text-center">Kids</h3>
-        <ul className="space-y-2 text-center">
-          <li>Infant & Toddler Shoes</li>
-          <li>Kids Shoes</li>
-          <li>Kids Jordan Shoes</li>
-          <li>Kids' Basketball Shoes</li>
-        </ul>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-
-
-
     </>
   )
 }
