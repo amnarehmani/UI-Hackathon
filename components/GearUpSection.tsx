@@ -8,7 +8,7 @@ const GearUpSection = () => {
 
     <>
   
-    <div className="bg-white py-10 px-4 sm:px-6 lg:px-8">
+    <div className="bg-white py-10 px-4 sm:px-6 lg:px-8 mt-20">
     <h2  className="text-center text-black font-semibold text-xl sm:text-2xl lg:text-3xl mb-8">
   Gear Up
 </h2>

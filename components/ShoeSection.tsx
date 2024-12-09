@@ -65,7 +65,7 @@ const ShoeSection = () => {
   };
 
   return (
-    <div className="max-w-screen-xl mx-auto py-8 px-4">
+    <div className="max-w-screen-xl mx-auto py-8 px-4 mt-20">
     
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-2xl font-semibold text-gray-900">Best of Air Max</h2>
@@ -95,6 +95,8 @@ const ShoeSection = () => {
             <Image
               src={shoe.image}
               alt={shoe.name}
+              width={500}
+              height={500}
               className="w-full h-auto object-contain mb-4"
             />
             <div className="w-full text-left">

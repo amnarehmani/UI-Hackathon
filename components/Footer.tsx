@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
           
           <div>
-            <h3 className="text-sm font-semibold mb-4">FIND A STORE</h3>
+            <h3 className="text-sm font-semibold mb-4">Find a store</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href="#" className="hover:underline">
@@ -32,7 +32,7 @@ const Footer = () => {
 
         
           <div>
-            <h3 className="text-sm font-semibold mb-4">GET HELP</h3>
+            <h3 className="text-sm font-semibold mb-4">Get Help</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href="#" className="hover:underline">
@@ -67,9 +67,9 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 3 */}
+          
           <div>
-            <h3 className="text-sm font-semibold mb-4">ABOUT NIKE</h3>
+            <h3 className="text-sm font-semibold mb-4">About Nike</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href="#" className="hover:underline">

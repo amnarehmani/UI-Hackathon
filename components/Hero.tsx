@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import ShoeSection from './ShoeSection'
 import GearUpSection from './GearUpSection'
-
+import Lists from './Lists'
 const Hero = () => {
   return (
     <>
@@ -54,7 +54,7 @@ const Hero = () => {
 
       {/* Featured Section */}
       <div>
-        <h2 className="text-center text-black font-semibold text-xl sm:text-2xl lg:text-3xl mb-8">
+        <h2 className="text-center text-black font-semibold text-xl sm:text-2xl lg:text-3xl mb-8 mt-20">
           Featured
         </h2>
         <div className="flex justify-center items-center">
@@ -84,9 +84,9 @@ const Hero = () => {
       {/* Gear Up Section */}
       <GearUpSection />
 
-      {/* Don&apos;t Miss Section */}
+      
       <div>
-        <h2 className="text-center text-black font-semibold text-xl sm:text-2xl lg:text-3xl mb-8">
+        <h2 className="text-center text-black font-semibold text-xl sm:text-2xl lg:text-3xl mb-8 mt-20">
           Dont Miss
         </h2>
         <div className="flex justify-center items-center">
@@ -114,7 +114,7 @@ const Hero = () => {
       </div>
 
       {/* Essentials Section */}
-      <div className="mt-12">
+      <div className="mt-20">
         <h2 className="text-center text-black font-semibold text-xl sm:text-2xl lg:text-3xl mb-8">
           The Essentials
         </h2>
@@ -163,55 +163,8 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="h-[70vh] sm:h-[60vh] flex items-center justify-center">
-  <div className="w-full max-w-7xl px-4">
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-
-    <div>
-        <h3 className="font-semibold text-lg mb-4 text-center">Icons</h3>
-        <ul className="space-y-2 text-center">
-          <li>All Shoes</li>
-          <li>Air Max 95</li>
-          <li>Air Max 90</li>
-          <li>Air Max 88</li>
-        </ul>
-      </div>
-      
-      <div>
-        <h3 className="font-semibold text-lg mb-4 text-center">Shoes</h3>
-        <ul className="space-y-2 text-center">
-          <li>All Shoes</li>
-          <li>Custom Shoes</li>
-          <li>Jordans Shoes</li>
-          <li>Running Shoes</li>
-        </ul>
-      </div>
-
-      
-      <div>
-        <h3 className="font-semibold text-lg mb-4 text-center">Clothing</h3>
-        <ul className="space-y-2 text-center">
-          <li>All Clothing</li>
-          <li>Modest Wear</li>
-          <li>Hoodies and Pullovers</li>
-          <li>Shirts and Tops</li>
-        </ul>
-      </div>
-
-      
-      <div>
-        <h3 className="font-semibold text-lg mb-4 text-center">Kids</h3>
-        <ul className="space-y-2 text-center">
-          <li>Infant and Toddler Shoes</li>
-          <li>Kids Shoes</li>
-          <li>Kids Jordan Shoes</li>
-          <li>Kids Basketball Shoes</li>
-        </ul>
-      </div>
-
-    </div>
-  </div>
-</div>
+      {/* lists */}
+<Lists />
 
     </>
   )
