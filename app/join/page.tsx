@@ -1,9 +1,9 @@
-import React from 'react'
-import Image from 'next/image'
-import { Checkbox } from "@/components/ui/checkbox"
-import Link from 'next/link'
+import React from 'react';
+import Image from 'next/image';
+import { Checkbox } from "@/components/ui/checkbox";
+import Link from 'next/link';
 
-const join = () => {
+const Join = () => {  // Change the function name to PascalCase
   return (
     <div className="flex flex-col items-center justify-center p-4">
       <div className='flex justify-center items-center'>
@@ -95,7 +95,7 @@ const join = () => {
         Already a Member? <Link href="/signin" className='underline font-[500] text-black'>Sign In</Link>.
       </p>
     </div>
-  )
+  );
 }
 
-export default join
+export default Join;
