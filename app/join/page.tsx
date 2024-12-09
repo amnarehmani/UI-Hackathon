@@ -80,8 +80,10 @@ const join = () => {
   <p className="text-[#8D8D8D] font-[400] text-[13px]">
   Sign up for emails to get updates from Nike on <br/> products, offers and your Member benefits
 </p>
- </div>
-<p className='text-[#8D8D8D] text-[13px] text-center font-[400]  mt-3 '>By creating an account, you agree to Nike's <span className='underline cursor-pointer'>Privacy <br /> Policy</span>  and <span className='underline cursor-pointer'>Terms of Use</span></p>
+<p className='text-[#8D8D8D] text-[13px] text-center font-[400]  mt-3'>
+  By creating an account, you agree to Nike&apos;s <span className='underline cursor-pointer'>Privacy <br /> Policy</span>  and <span className='underline cursor-pointer'>Terms of Use</span>
+</p>
+
 
 </div>
 
