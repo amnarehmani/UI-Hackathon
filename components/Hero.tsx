@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import ShoeSection from './ShoeSection'
 import GearUpSection from './GearUpSection'
+
 import Lists from './Lists'
 const Hero = () => {
   return (
@@ -83,6 +84,8 @@ const Hero = () => {
 
       {/* Gear Up Section */}
       <GearUpSection />
+
+      
 
       
       <div>

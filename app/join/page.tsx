@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { Checkbox } from "@/components/ui/checkbox";
 import Link from 'next/link';
 
-const Join = () => {  // Change the function name to PascalCase
+const Join = () => {  
   return (
     <div className="flex flex-col items-center justify-center p-4">
       <div className='flex justify-center items-center'>
