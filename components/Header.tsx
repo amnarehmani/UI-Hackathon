@@ -15,6 +15,7 @@ const Header = () => {
   return (
     <>
       <div className="flex justify-between items-center h-20 px-6 py-4">
+        <Link href="/">
         <Image
           src="/images/nike.png"
           alt="logo"
@@ -22,6 +23,7 @@ const Header = () => {
           height={100}
           className="w-[78px] h-[78px]"
         />
+        </Link>
 
         <div className="hidden lg:flex gap-8">
           <Link href="#" className="hover:border-b-2 hover:border-gray-500">
