@@ -93,7 +93,7 @@ const page = () => {
 
     
           <div className='flex flex-col items-center gap-4'>
-            <Image src="/images/image@2x.png" alt='phone icon' width={60} height={60} />
+            <Image src="/images/phone.png" alt='phone icon' width={60} height={60} />
             <p className='font-semibold'>000 800 919 0566</p>
             <p className='text-center text-sm'>Products &amp; Orders: 24/7 <br /> Info: 07:30 - 16:30, Mon-Fri</p>
           </div>
