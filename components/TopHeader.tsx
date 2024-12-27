@@ -18,7 +18,7 @@ const TopHeader = () => {
         </div>
 
     
-        <div className="bg-[#FFFFFF] px-4 py-1 rounded-md">
+        <div className="px-4 py-1 rounded-md">
           <Link
             href="/content"
             className="block text-sm md:text-base font-medium text-gray-700 hover:underline text-center"
