@@ -1,13 +1,12 @@
-"use client"
+"use client";
 import React, { useState } from 'react';
 import { CiSearch } from "react-icons/ci";
 import { TbAdjustmentsHorizontal } from "react-icons/tb";
 import Image from 'next/image';
 
-const page = () => {
+const Page = () => {  
 
   const [visibleStores, setVisibleStores] = useState(3);
-
 
   const allStores = [
     {
@@ -89,9 +88,8 @@ const page = () => {
     },
   ];
 
-  
   const showMoreStores = () => {
-    setVisibleStores(prev => Math.min(prev + 7, allStores.length)); 
+    setVisibleStores((prev) => Math.min(prev + 7, allStores.length));
   };
 
   return (
@@ -130,21 +128,24 @@ const page = () => {
             ))}
 
             {visibleStores < allStores.length && (
-              <button onClick={showMoreStores} className="mt-4 underline hover:text-blue-600 font-medium text-[15px]">
+              <button
+                onClick={showMoreStores}
+                className="mt-4 underline hover:text-blue-600 font-medium text-[15px]"
+              >
                 View All Stores
               </button>
             )}
           </div>
         </div>
 
-        <div className="w-full lg:w-[60%] flex justify-center mt-6 lg:mt-0 px-6">
+        <div className="w-full lg:w-[60%] flex justify-center mt-6 lg:mt-0 px-6 mb-4">
           <div className="relative w-full h-[400px] lg:h-[500px]">
             <Image
               src="/images/store.png"
               alt="location"
               layout="fill"
               objectFit="cover"
-              className="w-full h-full"
+              className="w-full h-full object-contain"
             />
           </div>
         </div>
@@ -153,4 +154,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page; 
